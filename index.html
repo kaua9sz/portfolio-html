@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9sz | Kauã - Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="css/tailwind-config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-dark-300 text-gray-200 font-poppins">
+    <nav class="fixed w-full z-50 bg-dark-300/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center">
+                        <span class="text-2xl font-bold gradient-text">9sz</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="hover:text-primary-400 transition-colors duration-300">Sobre</a>
+                    <a href="#skills" class="hover:text-primary-400 transition-colors duration-300">Habilidades</a>
+                    <a href="#projects" class="hover:text-primary-400 transition-colors duration-300">Projetos</a>
+                    <a href="#contact" class="hover:text-primary-400 transition-colors duration-300">Contato</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-200 border-b border-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#about" class="block px-3 py-2 rounded-md hover:bg-dark-100 hover:text-primary-400">Sobre</a>
+                <a href="#skills"
+                    class="block px-3 py-2 rounded-md hover:bg-dark-100 hover:text-primary-400">Habilidades</a>
+                <a href="#projects"
+                    class="block px-3 py-2 rounded-md hover:bg-dark-100 hover:text-primary-400">Projetos</a>
+                <a href="#contact"
+                    class="block px-3 py-2 rounded-md hover:bg-dark-100 hover:text-primary-400">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-pattern min-h-screen flex items-center justify-center relative pt-16">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <div
+                class="absolute w-72 h-72 bg-primary-500/30 rounded-full filter blur-3xl top-1/4 left-1/4 animate-pulse">
+            </div>
+            <div class="absolute w-96 h-96 bg-purple-500/20 rounded-full filter blur-3xl bottom-1/4 right-1/4"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 text-center">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+                    Olá, eu sou <span class="gradient-text">Kauã</span>
+                </h1>
+                <p class="text-xl sm:text-2xl md:text-3xl text-gray-400 mb-8">
+                    Desenvolvedor especializado em <span class="text-primary-400">automações</span> e
+                    <span class="text-primary-400">bots</span>
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <a href="#projects"
+                        class="px-8 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-primary-500/20">
+                        Meus Projetos
+                    </a>
+                    <a href="#contact"
+                        class="px-8 py-3 bg-dark-100 border border-primary-600 hover:bg-primary-600/10 text-white rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        Entre em Contato
+                    </a>
+                </div>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://github.com/kaua9sz"
+                        class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kauagl7/"
+                        class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-gray-400 hover:text-white">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-dark-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 data-aos="fade-up" class="text-3xl sm:text-4xl font-bold mb-4">Sobre
+                    <span class="gradient-text">Mim</span></h2>
+                <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full mb-8"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right" class="relative">
+                    <div class="w-full h-80 rounded-2xl overflow-hidden shadow-xl">
+                        <div class="w-full h-full bg-dark-300 flex items-center justify-center">
+                            <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path d="M30 260 L370 260 L390 230 L10 230 Z" fill="#232634" />
+                                    <rect x="10" y="230" width="380" height="30" fill="#232634" rx="4" />
+                                    
+                                    <rect x="170" y="240" width="60" height="10" rx="3" fill="#1E1E2E" />
+                                    
+                                    <rect x="50" y="238" width="100" height="3" rx="1" fill="#1A1B26" />
+                                    <rect x="250" y="238" width="100" height="3" rx="1" fill="#1A1B26" />
+                                    <rect x="50" y="245" width="100" height="3" rx="1" fill="#1A1B26" />
+                                    <rect x="250" y="245" width="100" height="3" rx="1" fill="#1A1B26" />
+                                    
+                                    <rect x="10" y="20" width="380" height="210" rx="6" fill="#1A1B26" />
+                                    <rect x="16" y="26" width="368" height="198" rx="4" fill="#24283B" />
+                                    
+                                    <rect x="16" y="26" width="368" height="16" fill="#1F2335" />
+                                    <circle cx="28" cy="34" r="4" fill="#FF5F57" />
+                                    <circle cx="44" cy="34" r="4" fill="#FEBC2E" />
+                                    <circle cx="60" cy="34" r="4" fill="#28C840" />
+                                    
+                                    <g>
+                                        <g opacity="0.8">
+                                            <rect x="30" y="60" width="120" height="3" rx="1" fill="#9D7CD8">
+                                                <animate attributeName="width" values="120;180;120" dur="4s" repeatCount="indefinite" />
+                                            </rect>
+                                            <rect x="30" y="70" width="150" height="3" rx="1" fill="#7AA2F7">
+                                                <animate attributeName="width" values="150;90;150" dur="5s" repeatCount="indefinite" />
+                                            </rect>
+                                            <rect x="30" y="80" width="100" height="3" rx="1" fill="#9ECE6A">
+                                                <animate attributeName="width" values="100;200;100" dur="6s" repeatCount="indefinite" />
+                                            </rect>
+                                            <rect x="30" y="90" width="200" height="3" rx="1" fill="#F7768E">
+                                                <animate attributeName="width" values="200;120;200" dur="7s" repeatCount="indefinite" />
+                                            </rect>
+                                            <rect x="30" y="100" width="170" height="3" rx="1" fill="#FF9E64">
+                                                <animate attributeName="width" values="170;220;170" dur="5s" repeatCount="indefinite" />
+                                            </rect>
+                                        </g>
+
+                                        <g opacity="0.8">
+                                            <rect x="30" y="120" width="140" height="3" rx="1" fill="#BB9AF7">
+                                                <animate attributeName="width" values="140;220;140" dur="6.5s" repeatCount="indefinite" />
+                                            </rect>
+                                            <rect x="30" y="130" width="190" height="3" rx="1" fill="#7DCFFF">
+                                                <animate attributeName="width" values="190;120;190" dur="5.5s" repeatCount="indefinite" />
+                                            </rect>
+                                            <rect x="30" y="140" width="80" height="3" rx="1" fill="#E0AF68">
+                                                <animate attributeName="width" values="80;180;80" dur="7.5s" repeatCount="indefinite" />
+                                            </rect>
+                                            <rect x="30" y="150" width="220" height="3" rx="1" fill="#C0CAF5">
+                                                <animate attributeName="width" values="220;140;220" dur="8s" repeatCount="indefinite" />
+                                            </rect>
+                                        </g>
+
+                                        <g opacity="0.8">
+                                            <rect x="30" y="180" width="180" height="3" rx="1" fill="#73DACA">
+                                                <animate attributeName="width" values="180;260;180" dur="5.2s" repeatCount="indefinite" />
+                                            </rect>
+                                            <rect x="30" y="190" width="150" height="3" rx="1" fill="#B4F9F8">
+                                                <animate attributeName="width" values="150;100;150" dur="4.7s" repeatCount="indefinite" />
+                                            </rect>
+                                            <rect x="30" y="200" width="240" height="3" rx="1" fill="#BB9AF7">
+                                                <animate attributeName="width" values="240;180;240" dur="6.2s" repeatCount="indefinite" />
+                                            </rect>
+                                            <rect x="30" y="210" width="130" height="3" rx="1" fill="#7AA2F7">
+                                                <animate attributeName="width" values="130;220;130" dur="7.2s" repeatCount="indefinite" />
+                                            </rect>
+                                        </g>
+                                        
+                                        <circle cx="120" y="80" r="1.5" fill="white" opacity="0.7">
+                                            <animate attributeName="cx" values="120;350;120" dur="10s" repeatCount="indefinite" />
+                                            <animate attributeName="opacity" values="0.7;0.3;0.7" dur="10s" repeatCount="indefinite" />
+                                        </circle>
+                                        <circle cx="200" y="140" r="1.5" fill="white" opacity="0.5">
+                                            <animate attributeName="cx" values="200;50;200" dur="12s" repeatCount="indefinite" />
+                                            <animate attributeName="opacity" values="0.5;0.2;0.5" dur="12s" repeatCount="indefinite" />
+                                        </circle>
+                                        <circle cx="320" y="180" r="1.2" fill="white" opacity="0.6">
+                                            <animate attributeName="cx" values="320;100;320" dur="15s" repeatCount="indefinite" />
+                                            <animate attributeName="opacity" values="0.6;0.1;0.6" dur="15s" repeatCount="indefinite" />
+                                        </circle>
+                                    </g>
+                                </g>
+                                
+                                <ellipse cx="200" cy="280" rx="190" ry="12" fill="black" opacity="0.3" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute -bottom-6 -right-6 w-40 h-40 bg-dark-100 rounded-2xl shadow-xl p-4 flex flex-col justify-center items-center animate-float">
+                        <p class="text-5xl font-bold gradient-text">6+</p>
+                        <p class="text-gray-400 text-sm">Anos de Experiência</p>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold mb-4">Desenvolvedor de Automações</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Sou um desenvolvedor apaixonado por criar soluções inovadoras através de automações e bots.
+                        Com mais de 6 anos de experiência no desenvolvimento de automações para plataformas como
+                        Discord, WhatsApp e Telegram, tenho ajudado empresas e comunidades a otimizar processos
+                        e melhorar a experiência de seus usuários.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="stats-item bg-dark-100 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-primary-400">1.000+</p>
+                            <p class="text-gray-500">Clientes Atendidos</p>
+                        </div>
+                        <div class="stats-item bg-dark-100 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-primary-400">1.000+</p>
+                            <p class="text-gray-500">Projetos Entregues</p>
+                        </div>
+                        <div class="stats-item bg-dark-100 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-primary-400">5+</p>
+                            <p class="text-gray-500">Linguagens</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-dark-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 data-aos="fade-up" class="text-3xl sm:text-4xl font-bold mb-4">Minhas
+                    <span class="gradient-text">Habilidades</span></h2>
+                <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full mb-8"></div>
+                <p data-aos="fade-up" data-aos-delay="200" class="text-gray-400 max-w-2xl mx-auto">
+                    Minhas competências técnicas que me permitem criar soluções robustas e inovadoras.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div data-aos="zoom-in" data-aos-delay="100" class="card rounded-xl p-6 h-full">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary-500/20 flex items-center justify-center mr-4">
+                            <i class="fas fa-code text-primary-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Desenvolvimento</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="tech-stack">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">JavaScript</span>
+                                <span class="text-primary-400">100%</span>
+                            </div>
+                            <div class="w-full bg-dark-100 rounded-full h-2">
+                                <div class="bg-primary-500 h-2 rounded-full tech-icon" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">TypeScript</span>
+                                <span class="text-primary-400">85%</span>
+                            </div>
+                            <div class="w-full bg-dark-100 rounded-full h-2">
+                                <div class="bg-primary-500 h-2 rounded-full tech-icon" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Python</span>
+                                <span class="text-primary-400">80%</span>
+                            </div>
+                            <div class="w-full bg-dark-100 rounded-full h-2">
+                                <div class="bg-primary-500 h-2 rounded-full tech-icon" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Lua</span>
+                                <span class="text-primary-400">75%</span>
+                            </div>
+                            <div class="w-full bg-dark-100 rounded-full h-2">
+                                <div class="bg-primary-500 h-2 rounded-full tech-icon" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">PHP</span>
+                                <span class="text-primary-400">70%</span>
+                            </div>
+                            <div class="w-full bg-dark-100 rounded-full h-2">
+                                <div class="bg-primary-500 h-2 rounded-full tech-icon" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Java</span>
+                                <span class="text-primary-400">60%</span>
+                            </div>
+                            <div class="w-full bg-dark-100 rounded-full h-2">
+                                <div class="bg-primary-500 h-2 rounded-full tech-icon" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="200" class="card rounded-xl p-6 h-full">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary-500/20 flex items-center justify-center mr-4">
+                            <i class="fas fa-database text-primary-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Banco de Dados</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="tech-stack">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Firebase</span>
+                                <span class="text-primary-400">100%</span>
+                            </div>
+                            <div class="w-full bg-dark-100 rounded-full h-2">
+                                <div class="bg-primary-500 h-2 rounded-full tech-icon" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">MySQL</span>
+                                <span class="text-primary-400">95%</span>
+                            </div>
+                            <div class="w-full bg-dark-100 rounded-full h-2">
+                                <div class="bg-primary-500 h-2 rounded-full tech-icon" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">MongoDB</span>
+                                <span class="text-primary-400">80%</span>
+                            </div>
+                            <div class="w-full bg-dark-100 rounded-full h-2">
+                                <div class="bg-primary-500 h-2 rounded-full tech-icon" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">PostgreSQL</span>
+                                <span class="text-primary-400">75%</span>
+                            </div>
+                            <div class="w-full bg-dark-100 rounded-full h-2">
+                                <div class="bg-primary-500 h-2 rounded-full tech-icon" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">SQLite</span>
+                                <span class="text-primary-400">70%</span>
+                            </div>
+                            <div class="w-full bg-dark-100 rounded-full h-2">
+                                <div class="bg-primary-500 h-2 rounded-full tech-icon" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="300" class="card rounded-xl p-6 h-full">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary-500/20 flex items-center justify-center mr-4">
+                            <i class="fas fa-robot text-primary-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Plataformas</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="tech-stack">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Discord</span>
+                                <span class="text-primary-400">100%</span>
+                            </div>
+                            <div class="w-full bg-dark-100 rounded-full h-2">
+                                <div class="bg-primary-500 h-2 rounded-full tech-icon" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">WhatsApp</span>
+                                <span class="text-primary-400">90%</span>
+                            </div>
+                            <div class="w-full bg-dark-100 rounded-full h-2">
+                                <div class="bg-primary-500 h-2 rounded-full tech-icon" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Telegram</span>
+                                <span class="text-primary-400">85%</span>
+                            </div>
+                            <div class="w-full bg-dark-100 rounded-full h-2">
+                                <div class="bg-primary-500 h-2 rounded-full tech-icon" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Inteligência Artificial</span>
+                                <span class="text-primary-400">70%</span>
+                            </div>
+                            <div class="w-full bg-dark-100 rounded-full h-2">
+                                <div class="bg-primary-500 h-2 rounded-full tech-icon" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-dark-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 data-aos="fade-up" class="text-3xl sm:text-4xl font-bold mb-4">Meus
+                    <span class="gradient-text">Projetos</span></h2>
+                <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full mb-8"></div>
+                <p data-aos="fade-up" data-aos-delay="200" class="text-gray-400 max-w-2xl mx-auto">
+                    Conheça alguns dos meus projetos mais relevantes.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div data-aos="fade-up" class="card rounded-xl overflow-hidden relative">
+                    <a href="https://newbots.com.br" target="_blank" rel="noopener noreferrer"
+                        class="absolute top-4 right-4 z-10 px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-full transition-all duration-300 shadow-lg text-sm font-medium flex items-center gap-2">
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <div class="h-56 bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center overflow-hidden">
+                        <img src="https://i.imgur.com/lxLDGh9.png" alt="NewBots" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold">NewBots</h3>
+                            <span class="text-xs bg-primary-500/20 text-primary-400 py-1 px-2 rounded-full">2020-2025</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">
+                            Fundada no final de 2019, a NewBots se especializou em desenvolver automações personalizadas
+                            para
+                            plataformas como Discord, WhatsApp e Telegram. Cada projeto era feito sob medida conforme as
+                            necessidades do cliente.
+                        </p>
+                        <div class="mb-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-primary-400 mr-2"></i>
+                                <span class="text-gray-300">Mais de 800 clientes atendidos</span>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-primary-400 mr-2"></i>
+                                <span class="text-gray-300">Soluções personalizadas para cada cliente</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-primary-400 mr-2"></i>
+                                <span class="text-gray-300">Automações para múltiplas plataformas</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">Node.js</span>
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">Javascript</span>
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">MySQL</span>
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200" class="card rounded-xl overflow-hidden relative">
+                    <a href="https://ayko.gg" target="_blank" rel="noopener noreferrer"
+                        class="absolute top-4 right-4 z-10 px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-full transition-all duration-300 shadow-lg text-sm font-medium flex items-center gap-2">
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <div class="h-56 bg-gradient-to-r from-indigo-600 to-pink-500 flex items-center justify-center overflow-hidden">
+                        <img src="https://i.imgur.com/2B9x3Hy.png" alt="Ayko" class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold">Ayko</h3>
+                            <span class="text-xs bg-primary-500/20 text-primary-400 py-1 px-2 rounded-full">Atual</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">
+                            Nascida a partir da principal demanda da NewBots, a Ayko é um bot público e geral para
+                            servidores do Discord,
+                            com uma dashboard web desenvolvida para fácil configuração.
+                        </p>
+                        <div class="mb-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-primary-400 mr-2"></i>
+                                <span class="text-gray-300">Presente em cerca de 4.000 servidores</span>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-primary-400 mr-2"></i>
+                                <span class="text-gray-300">Utilizada por aproximadamente 923 mil usuários</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-primary-400 mr-2"></i>
+                                <span class="text-gray-300">Dashboard web para configuração fácil</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">Discord.js</span>
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">Node.js</span>
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">EJS</span>
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="famous-projects" class="py-20 bg-dark-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 data-aos="fade-up" class="text-3xl sm:text-4xl font-bold mb-4">Projetos
+                    <span class="gradient-text">Famosos</span></h2>
+                <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full mb-8"></div>
+                <p data-aos="fade-up" data-aos-delay="200" class="text-gray-400 max-w-2xl mx-auto">
+                    Servidores renomados do Discord que tive o prazer de ajudar com soluções personalizadas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div data-aos="fade-up" class="card rounded-xl overflow-hidden relative">
+                    <div class="h-40 bg-gradient-to-r from-purple-600 to-indigo-600 flex items-center justify-center p-6">
+                        <div class="flex flex-col items-center">
+                            <i class="fab fa-discord text-5xl text-white mb-3"></i>
+                            <h3 class="text-2xl font-bold text-white">LOUD Thurzin</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold">LOUD Thurzin</h3>
+                            <span class="text-xs bg-primary-500/20 text-primary-400 py-1 px-2 rounded-full">35 mil membros</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">
+                            Servidor oficial do streamer Thurzin da LOUD, onde implementei sistemas de moderação, 
+                            gerenciamento de eventos e interação com a comunidade.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">Moderação</span>
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">Eventos</span>
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">Interatividade</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="100" class="card rounded-xl overflow-hidden relative">
+                    <div class="h-40 bg-gradient-to-r from-green-600 to-blue-600 flex items-center justify-center p-6">
+                        <div class="flex flex-col items-center">
+                            <i class="fab fa-discord text-5xl text-white mb-3"></i>
+                            <h3 class="text-2xl font-bold text-white">MIBR Aspas</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold">MIBR Aspas</h3>
+                            <span class="text-xs bg-primary-500/20 text-primary-400 py-1 px-2 rounded-full">7 mil membros</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">
+                            Servidor do jogador profissional Aspas da MIBR, onde desenvolvi sistemas de notificações de partidas,
+                            alertas de transmissões ao vivo e interação entre fãs.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">Notificações</span>
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">Transmissões</span>
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">Comunidade</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200" class="card rounded-xl overflow-hidden relative">
+                    <div class="h-40 bg-gradient-to-r from-pink-600 to-orange-600 flex items-center justify-center p-6">
+                        <div class="flex flex-col items-center">
+                            <i class="fab fa-discord text-5xl text-white mb-3"></i>
+                            <h3 class="text-2xl font-bold text-white">BLAKKGIFS</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold">BLAKKGIFS</h3>
+                            <span class="text-xs bg-primary-500/20 text-primary-400 py-1 px-2 rounded-full">97 mil membros</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">
+                            Uma das maiores comunidades brasileiras de GIFs e ícones para personalizar perfis no Discord, com sistemas de organização, moderação automática e busca de recursos.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">Automod</span>
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">Integrações</span>
+                            <span class="text-xs bg-dark-100 text-gray-400 py-1 px-2 rounded-full">Gerenciamento</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-dark-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 data-aos="fade-up" class="text-3xl sm:text-4xl font-bold mb-4">Entre em
+                    <span class="gradient-text">Contato</span></h2>
+                <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full mb-8"></div>
+                <p data-aos="fade-up" data-aos-delay="200" class="text-gray-400 max-w-2xl mx-auto">
+                    Interessado em trabalhar juntos? Entre em contato comigo para discutirmos seu projeto.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <div class="card rounded-xl p-6 h-full">
+                        <h3 class="text-xl font-semibold mb-4">Informações de Contato</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-primary-400"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400">Email</p>
+                                    <p class="text-gray-200">contato@9sz.dev</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary-500/20 flex items-center justify-center mr-4">
+                                    <i class="fab fa-github text-primary-400"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400">GitHub</p>
+                                    <p class="text-gray-200">github.com/kaua9sz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <h3 class="text-xl font-semibold mb-4">Redes Sociais</h3>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/kaua9sz"
+                                    class="w-10 h-10 rounded-full bg-dark-100 flex items-center justify-center transition-all duration-300 hover:bg-primary-500 hover:text-white">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.instagram.com/kauagl7/"
+                                    class="w-10 h-10 rounded-full bg-dark-100 flex items-center justify-center transition-all duration-300 hover:bg-primary-500 hover:text-white">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <div class="card rounded-xl p-6 h-full flex flex-col items-center justify-center text-center">
+                        <i class="fas fa-envelope-open-text text-5xl text-primary-400 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Formulário Indisponível</h3>
+                        <p class="text-gray-400 mb-4">
+                            No momento, o envio de mensagens pelo site está desativado.<br>
+                            Para entrar em contato, utilize o email ou as redes sociais ao lado.
+                        </p>
+                        <div class="flex space-x-4 justify-center">
+                            <a href="mailto:contato@9sz.dev"
+                                class="px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-300 flex items-center gap-2">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                            <a href="https://www.instagram.com/kauagl7/"
+                                class="px-4 py-2 bg-dark-100 border border-primary-600 hover:bg-primary-600/10 text-white rounded-lg transition-all duration-300 flex items-center gap-2">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark-400 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#" class="text-2xl font-bold gradient-text">9sz</a>
+                </div>
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">Sobre</a>
+                    <a href="#skills"
+                        class="text-gray-400 hover:text-white transition-colors duration-300">Habilidades</a>
+                    <a href="#projects"
+                        class="text-gray-400 hover:text-white transition-colors duration-300">Projetos</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contato</a>
+                </div>
+                <div>
+                    <p class="text-gray-500 text-sm">© 2025 9sz.dev. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+.tech-stack:hover .tech-icon {
+    transform: translateY(-5px);
+}
+.tech-icon {
+    transition: all 0.3s ease;
+}
+.gradient-text {
+    background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 200%;
+    animation: gradient 8s linear infinite;
+}
+.card {
+    transition: all 0.3s ease;
+    background: rgba(17, 17, 17, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+.hero-pattern {
+    background-image: radial-gradient(rgba(56, 189, 248, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+.glow {
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+}
+.stats-item {
+    transition: all 0.5s ease;
+}
+.stats-item:hover {
+    transform: scale(1.05);
+}
+body {
+    overflow-x: hidden;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.gradient-bg {
+    background: linear-gradient(-45deg, #0ea5e9, #818cf8, #c084fc, #0ea5e9);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
